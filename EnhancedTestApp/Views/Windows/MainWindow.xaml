@@ -18,10 +18,30 @@
                 <MenuItem Header="О программе"></MenuItem>
             </MenuItem>
         </Menu>
-        <StatusBar DockPanel.Dock="Bottom"></StatusBar>
+        <StatusBar DockPanel.Dock="Bottom">
+            <StatusBarItem>
+                <TextBlock Text="{Binding Path=Status}"/>
+            </StatusBarItem>
+            <StatusBarItem>
+                <ProgressBar Width="220" Height="20"/>
+            </StatusBarItem>
+        </StatusBar>
         <TabControl>
-            <TabItem></TabItem>
-            <TabItem></TabItem>
+            <TabItem Header="Вкладка 1">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="10*"/>
+                    </Grid.RowDefinitions>
+                    <Border Grid.Column="0" Grid.Row="0" Margin="10" Background="Bisque" CornerRadius="6" BorderThickness="2" BorderBrush="Orange"></Border>
+                    <Button Grid.Column="0" Grid.Row="1" Margin="0 10" Width="200" Height="35" VerticalAlignment="Top" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="Вкладка 2"></TabItem>
         </TabControl>
     </DockPanel>
 </Window>
