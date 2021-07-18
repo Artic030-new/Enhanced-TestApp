@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
 C:\Users\030\Source\Repos\Enhanced-TestApp\EnhancedTestApp\App.xaml
-11151548125
+11895717287
 
-5-1189172027
+5-1099152506
 1921654412462
-MainWindow.xaml;
+Views\Windows\MainWindow.xaml;
 
-False
+True
 
