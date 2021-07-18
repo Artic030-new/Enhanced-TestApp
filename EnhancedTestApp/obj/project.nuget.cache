@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "6YSZXIRPIoA8aHx8QD7A0weoBAk9zfEb4bCup2whcwyV8rIbcyjsk7kf56v1vC18XRNz2WvEcaW2Y8irNvvTpA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\030\\source\\repos\\EnhancedTestApp\\EnhancedTestApp\\EnhancedTestApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\030\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}
