@@ -1,0 +1,13 @@
+C:\Users\030\Source\Repos\Enhanced-TestApp\Tests\EnhancedConsole\bin\Debug\netcoreapp3.1\EnhancedConsole.exe
+C:\Users\030\Source\Repos\Enhanced-TestApp\Tests\EnhancedConsole\bin\Debug\netcoreapp3.1\EnhancedConsole.deps.json
+C:\Users\030\Source\Repos\Enhanced-TestApp\Tests\EnhancedConsole\bin\Debug\netcoreapp3.1\EnhancedConsole.runtimeconfig.json
+C:\Users\030\Source\Repos\Enhanced-TestApp\Tests\EnhancedConsole\bin\Debug\netcoreapp3.1\EnhancedConsole.runtimeconfig.dev.json
+C:\Users\030\Source\Repos\Enhanced-TestApp\Tests\EnhancedConsole\bin\Debug\netcoreapp3.1\EnhancedConsole.dll
+C:\Users\030\Source\Repos\Enhanced-TestApp\Tests\EnhancedConsole\bin\Debug\netcoreapp3.1\EnhancedConsole.pdb
+C:\Users\030\Source\Repos\Enhanced-TestApp\Tests\EnhancedConsole\obj\Debug\netcoreapp3.1\EnhancedConsole.csprojAssemblyReference.cache
+C:\Users\030\Source\Repos\Enhanced-TestApp\Tests\EnhancedConsole\obj\Debug\netcoreapp3.1\EnhancedConsole.AssemblyInfoInputs.cache
+C:\Users\030\Source\Repos\Enhanced-TestApp\Tests\EnhancedConsole\obj\Debug\netcoreapp3.1\EnhancedConsole.AssemblyInfo.cs
+C:\Users\030\Source\Repos\Enhanced-TestApp\Tests\EnhancedConsole\obj\Debug\netcoreapp3.1\EnhancedConsole.csproj.CoreCompileInputs.cache
+C:\Users\030\Source\Repos\Enhanced-TestApp\Tests\EnhancedConsole\obj\Debug\netcoreapp3.1\EnhancedConsole.dll
+C:\Users\030\Source\Repos\Enhanced-TestApp\Tests\EnhancedConsole\obj\Debug\netcoreapp3.1\EnhancedConsole.pdb
+C:\Users\030\Source\Repos\Enhanced-TestApp\Tests\EnhancedConsole\obj\Debug\netcoreapp3.1\EnhancedConsole.genruntimeconfig.cache

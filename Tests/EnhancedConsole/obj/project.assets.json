@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\030\\Source\\Repos\\Enhanced-TestApp\\EnhancedTestApp\\EnhancedTestApp.csproj",
-      "projectName": "EnhancedTestApp",
-      "projectPath": "C:\\Users\\030\\Source\\Repos\\Enhanced-TestApp\\EnhancedTestApp\\EnhancedTestApp.csproj",
+      "projectUniqueName": "C:\\Users\\030\\Source\\Repos\\Enhanced-TestApp\\Tests\\EnhancedConsole\\EnhancedConsole.csproj",
+      "projectName": "EnhancedConsole",
+      "projectPath": "C:\\Users\\030\\Source\\Repos\\Enhanced-TestApp\\Tests\\EnhancedConsole\\EnhancedConsole.csproj",
       "packagesPath": "C:\\Users\\030\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\030\\Source\\Repos\\Enhanced-TestApp\\EnhancedTestApp\\obj\\",
+      "outputPath": "C:\\Users\\030\\Source\\Repos\\Enhanced-TestApp\\Tests\\EnhancedConsole\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\030\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -62,9 +62,6 @@
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
-          },
-          "Microsoft.WindowsDesktop.App.WPF": {
-            "privateAssets": "none"
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
