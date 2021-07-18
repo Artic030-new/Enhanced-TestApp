@@ -7,8 +7,23 @@
   "targets": {
     ".NETCoreApp,Version=v3.1": {
       "EnhancedTestApp/1.0.0": {
+        "dependencies": {
+          "FontAwesome5": "2.1.4"
+        },
         "runtime": {
           "EnhancedTestApp.dll": {}
+        }
+      },
+      "FontAwesome5/2.1.4": {
+        "runtime": {
+          "lib/netcoreapp3.1/FontAwesome5.Net.dll": {
+            "assemblyVersion": "2.1.4.0",
+            "fileVersion": "2.1.4.0"
+          },
+          "lib/netcoreapp3.1/FontAwesome5.dll": {
+            "assemblyVersion": "2.1.4.0",
+            "fileVersion": "2.1.4.0"
+          }
         }
       }
     }
@@ -18,6 +33,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "FontAwesome5/2.1.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-n0G6GPSoZNlE8JmjIegS9BERCcqoy9R4eVrfkejW9wIjJXxrSPVX82hbWvFCDNMCebclQePnitTbG3/IYqYB3A==",
+      "path": "fontawesome5/2.1.4",
+      "hashPath": "fontawesome5.2.1.4.nupkg.sha512"
     }
   }
 }

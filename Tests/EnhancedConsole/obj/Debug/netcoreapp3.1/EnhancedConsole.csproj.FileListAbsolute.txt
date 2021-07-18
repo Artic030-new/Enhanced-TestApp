@@ -10,3 +10,4 @@ C:\Users\030\Source\Repos\Enhanced-TestApp\Tests\EnhancedConsole\obj\Debug\netco
 C:\Users\030\Source\Repos\Enhanced-TestApp\Tests\EnhancedConsole\obj\Debug\netcoreapp3.1\EnhancedConsole.dll
 C:\Users\030\Source\Repos\Enhanced-TestApp\Tests\EnhancedConsole\obj\Debug\netcoreapp3.1\EnhancedConsole.pdb
 C:\Users\030\Source\Repos\Enhanced-TestApp\Tests\EnhancedConsole\obj\Debug\netcoreapp3.1\EnhancedConsole.genruntimeconfig.cache
+C:\Users\030\Source\Repos\Enhanced-TestApp\Tests\EnhancedConsole\obj\Debug\netcoreapp3.1\EnhancedConsole.csprojAssemblyReference.cache

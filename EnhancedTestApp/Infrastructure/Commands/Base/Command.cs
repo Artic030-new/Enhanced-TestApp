@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Windows.Input;
 
-namespace EnhancedTestApp.Infrastructure.Command.Base
+namespace EnhancedTestApp.Infrastructure.Commands.Base
 {
     internal abstract class Command : ICommand
     {
