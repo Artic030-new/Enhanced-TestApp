@@ -4,7 +4,6 @@ C:\Users\030\Source\Repos\Enhanced-TestApp\Tests\EnhancedConsole\bin\Debug\netco
 C:\Users\030\Source\Repos\Enhanced-TestApp\Tests\EnhancedConsole\bin\Debug\netcoreapp3.1\EnhancedConsole.runtimeconfig.dev.json
 C:\Users\030\Source\Repos\Enhanced-TestApp\Tests\EnhancedConsole\bin\Debug\netcoreapp3.1\EnhancedConsole.dll
 C:\Users\030\Source\Repos\Enhanced-TestApp\Tests\EnhancedConsole\bin\Debug\netcoreapp3.1\EnhancedConsole.pdb
-C:\Users\030\Source\Repos\Enhanced-TestApp\Tests\EnhancedConsole\obj\Debug\netcoreapp3.1\EnhancedConsole.csprojAssemblyReference.cache
 C:\Users\030\Source\Repos\Enhanced-TestApp\Tests\EnhancedConsole\obj\Debug\netcoreapp3.1\EnhancedConsole.AssemblyInfoInputs.cache
 C:\Users\030\Source\Repos\Enhanced-TestApp\Tests\EnhancedConsole\obj\Debug\netcoreapp3.1\EnhancedConsole.AssemblyInfo.cs
 C:\Users\030\Source\Repos\Enhanced-TestApp\Tests\EnhancedConsole\obj\Debug\netcoreapp3.1\EnhancedConsole.csproj.CoreCompileInputs.cache

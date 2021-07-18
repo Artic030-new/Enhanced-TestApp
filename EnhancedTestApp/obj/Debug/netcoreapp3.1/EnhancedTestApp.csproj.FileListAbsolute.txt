@@ -23,7 +23,6 @@ C:\Users\030\Source\Repos\Enhanced-TestApp\EnhancedTestApp\bin\Debug\netcoreapp3
 C:\Users\030\Source\Repos\Enhanced-TestApp\EnhancedTestApp\bin\Debug\netcoreapp3.1\EnhancedTestApp.runtimeconfig.dev.json
 C:\Users\030\Source\Repos\Enhanced-TestApp\EnhancedTestApp\bin\Debug\netcoreapp3.1\EnhancedTestApp.dll
 C:\Users\030\Source\Repos\Enhanced-TestApp\EnhancedTestApp\bin\Debug\netcoreapp3.1\EnhancedTestApp.pdb
-C:\Users\030\Source\Repos\Enhanced-TestApp\EnhancedTestApp\obj\Debug\netcoreapp3.1\EnhancedTestApp.csprojAssemblyReference.cache
 C:\Users\030\Source\Repos\Enhanced-TestApp\EnhancedTestApp\obj\Debug\netcoreapp3.1\App.g.cs
 C:\Users\030\Source\Repos\Enhanced-TestApp\EnhancedTestApp\obj\Debug\netcoreapp3.1\EnhancedTestApp_MarkupCompile.cache
 C:\Users\030\Source\Repos\Enhanced-TestApp\EnhancedTestApp\obj\Debug\netcoreapp3.1\EnhancedTestApp_MarkupCompile.lref
@@ -36,3 +35,4 @@ C:\Users\030\Source\Repos\Enhanced-TestApp\EnhancedTestApp\obj\Debug\netcoreapp3
 C:\Users\030\Source\Repos\Enhanced-TestApp\EnhancedTestApp\obj\Debug\netcoreapp3.1\EnhancedTestApp.genruntimeconfig.cache
 C:\Users\030\Source\Repos\Enhanced-TestApp\EnhancedTestApp\obj\Debug\netcoreapp3.1\Views\Windows\MainWindow.g.cs
 C:\Users\030\Source\Repos\Enhanced-TestApp\EnhancedTestApp\obj\Debug\netcoreapp3.1\Views\Windows\MainWindow.baml
+C:\Users\030\Source\Repos\Enhanced-TestApp\EnhancedTestApp\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
