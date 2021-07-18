@@ -10,7 +10,18 @@
     <Window.DataContext>
         <vm:MainWindowViewModel/>
     </Window.DataContext>
-    <Grid>
-        <TextBox Margin="36,30" Text="{Binding Title, UpdateSourceTrigger=PropertyChanged}" Width="300" VerticalAlignment="Top" TextWrapping="Wrap"/>
-    </Grid>
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="Файл"></MenuItem>
+            <MenuItem Header="Выход"></MenuItem>
+            <MenuItem Header="Помощь">
+                <MenuItem Header="О программе"></MenuItem>
+            </MenuItem>
+        </Menu>
+        <StatusBar DockPanel.Dock="Bottom"></StatusBar>
+        <TabControl>
+            <TabItem></TabItem>
+            <TabItem></TabItem>
+        </TabControl>
+    </DockPanel>
 </Window>
