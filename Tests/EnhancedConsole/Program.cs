@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Net.Http;
+using System.Linq;
 using System.Threading.Tasks;
+using System.Globalization;
 
 namespace EnhancedConsole
 {
@@ -26,15 +28,30 @@ namespace EnhancedConsole
                 var line = data_reader.ReadLine();
                 if (string.IsNullOrWhiteSpace(line))
                     continue;
-                yield return line;
+                yield return line.Replace("Korea,", "Korea -");
             }
         }
 
+        private static DateTime[] GetDates() => GetDataLines().First().Split(',').Skip(4).Select(s => DateTime.Parse(s, CultureInfo.InvariantCulture)).ToArray();
+        private static IEnumerable<(String Country, String Province, int[] Counts)> GetData() 
+        {
+            var lines = GetDataLines().Skip(1).Select(line => line.Split(','));
+            foreach (var item in lines)
+            {
+                var province = item[0].Trim();
+                var country_name = item[1].Trim(' ', '"');
+                var counts = item.Skip(4).Select(int.Parse).ToArray();
+
+                yield return (province, country_name, counts);
+            }
+        }
         static void Main(string[] args)
         {
             foreach (var item in GetDataLines())
             {
-                Console.WriteLine(item);
+                // Console.WriteLine(item);
+                var dates = GetDates();
+                Console.WriteLine(String.Join("\r\n", dates));
             }
         }
     }
