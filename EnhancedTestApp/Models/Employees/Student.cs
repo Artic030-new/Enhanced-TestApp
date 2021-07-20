@@ -13,4 +13,9 @@ namespace EnhancedTestApp.Models.Employees
         public double Rating { get; set; }
 
     }
+    internal class Group 
+    {
+        public string Name { get; set; }
+        public ICollection<Student> Students { get; set; }
+    }
 }

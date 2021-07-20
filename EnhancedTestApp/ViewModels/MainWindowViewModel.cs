@@ -1,7 +1,10 @@
 ﻿using EnhancedTestApp.Infrastructure.Commands;
+using EnhancedTestApp.Models.Employees;
 using EnhancedTestApp.ViewModels.Base;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Linq;
 using System.Text;
 using System.Windows;
 using System.Windows.Input;
@@ -10,11 +13,18 @@ namespace EnhancedTestApp.ViewModels
 {
     internal class MainWindowViewModel : ViewModel
     {
+        public ObservableCollection<Group> Groups { get; }
         public MainWindowViewModel() 
         {
             #region === Команды ===
             CloseAppCommand = new LambdaCommand(OnCloseAppCommandExecuted, CanCloseAppCommandExecute);
             #endregion === Команды ===
+            var groups = Enumerable.Range(1, 20).Select(e => new Group() 
+            {
+                Name = "Группа"  + e,
+            });
+            Groups = new ObservableCollection<Group>(groups);
+            
         }
         #region Свойство заголовка
         /// <summary> Заголовок окна </summary>
