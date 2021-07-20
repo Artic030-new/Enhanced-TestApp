@@ -47,12 +47,8 @@ namespace EnhancedConsole
         }
         static void Main(string[] args)
         {
-            foreach (var item in GetDataLines())
-            {
-                // Console.WriteLine(item);
-                var dates = GetDates();
-                Console.WriteLine(String.Join("\r\n", dates));
-            }
+            var russia_data = GetData().First(v => v.Country.Equals("Russia", StringComparison.OrdinalIgnoreCase));
+            Console.WriteLine(string.Join("\r\n", GetDates().Zip(russia_data.Counts, (date, count) => $"{date} = {count}")));
         }
     }
 }
