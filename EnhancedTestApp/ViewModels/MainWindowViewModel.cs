@@ -19,10 +19,22 @@ namespace EnhancedTestApp.ViewModels
             #region === Команды ===
             CloseAppCommand = new LambdaCommand(OnCloseAppCommandExecuted, CanCloseAppCommandExecute);
             #endregion === Команды ===
+            int student_index = 1;
+            Random rnd = new Random();
+            var students = Enumerable.Range(1, 10).Select(s => new Student 
+            {
+                Name = "Студент" + student_index,
+                Surname = "Имя" + student_index, 
+                Patronymic = "Отчество" + ++student_index,
+                Birthday = DateTime.Now,
+                Rating = Math.Floor(rnd.NextDouble())
+
+            });
             var groups = Enumerable.Range(1, 20).Select(e => new Group() 
             {
                 Name = "Группа"  + e,
-            });
+                Students = new ObservableCollection<Student>(students),
+            });;
             Groups = new ObservableCollection<Group>(groups);
             
         }

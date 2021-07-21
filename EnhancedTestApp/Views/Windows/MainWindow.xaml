@@ -50,6 +50,20 @@
                         </Border.InputBindings>
                     </Border>
                     <Button Grid.Column="0" Grid.Row="1" Margin="0 10" Width="200" Height="35" VerticalAlignment="Top" Command="{Binding Path=CloseAppCommand}"/>
+                    <Grid Grid.Column="1" Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="250"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <GroupBox Header="Группы">
+                            <ListBox ItemsSource="{Binding Path=Groups}" DisplayMemberPath="Name"/>
+                        </GroupBox>
+                        <GroupBox Grid.Column="1" Grid.Row="0" Header="Студенты">
+                            <DataGrid>
+                                
+                            </DataGrid>
+                        </GroupBox>
+                    </Grid>
                 </Grid>
             </TabItem>
             <TabItem Header="Вкладка 2"></TabItem>
