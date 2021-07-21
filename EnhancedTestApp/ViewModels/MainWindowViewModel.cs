@@ -14,6 +14,8 @@ namespace EnhancedTestApp.ViewModels
     internal class MainWindowViewModel : ViewModel
     {
         public ObservableCollection<Group> Groups { get; }
+        private Group _selectedGroup;
+        public Group SelectedGroup { get => _selectedGroup; set => Set(ref _selectedGroup, value); }
         public MainWindowViewModel() 
         {
             #region === Команды ===
