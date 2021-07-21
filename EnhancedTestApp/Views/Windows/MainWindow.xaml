@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:vm="clr-namespace:EnhancedTestApp.ViewModels"
         xmlns:fa="http://schemas.fontawesome.com/icons/"
+        xmlns:employee="clr-namespace:EnhancedTestApp.Models.Employees"
         xmlns:local="clr-namespace:EnhancedTestApp"
         mc:Ignorable="d"
         Title="{Binding Path=Title}" Height="450" Width="800">
@@ -59,14 +60,22 @@
                             <ListBox SelectedIndex="0" ItemsSource="{Binding Path=Groups}" DisplayMemberPath="Name" SelectedItem="{Binding Path=SelectedGroup}"/>
                         </GroupBox>
                         <GroupBox Grid.Column="1" Grid.Row="0" Header="{Binding Path=SelectedGroup.Name, StringFormat='Студент группы {0}', FallbackValue='Студенты', TargetNullValue='Группа не выбрана'}">
-                            <DataGrid ItemsSource="{Binding Path=SelectedGroup.Students}" AutoGenerateColumns="False" IsReadOnly="True">
+                            <DataGrid ItemsSource="{Binding Path=SelectedGroup.Students}" AutoGenerateColumns="False" IsReadOnly="True" HorizontalGridLinesBrush="Transparent" GridLinesVisibility="Vertical" VerticalGridLinesBrush="LightGray">
                                 <DataGrid.Columns>
                                     <DataGridTextColumn Header="Фамилия" Binding="{Binding Path=Name}"/>
                                     <DataGridTextColumn Header="Имя" Binding="{Binding Path=Surname}"/>
                                     <DataGridTextColumn Header="Отчество" Binding="{Binding Path=Patronymic}"/>
                                     <DataGridTextColumn Header="Рейтинг" Binding="{Binding Path=Rating}"/>
-                                    <DataGridTextColumn Header="Дата рождения" Binding="{Binding Path=Birthday, StringFormat='dd.MM.yyyy'}"/>
+                                    <DataGridTemplateColumn Header="Дата рождения">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate DataType="employee:Student">
+                                                <DatePicker SelectedDate="{Binding Path=Birthday}"></DatePicker>
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
                                     <DataGridTextColumn Header="Группа" Binding="{Binding DataContext.SelectedGroup.Name, RelativeSource={RelativeSource AncestorType=DataGrid}}"/>
+                                    <DataGridTextColumn Header="Заметки" Binding="{Binding Path=Description}" Width="auto"/>
+
                                 </DataGrid.Columns> 
                             </DataGrid>
                         </GroupBox>
