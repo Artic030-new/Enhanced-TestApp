@@ -36,7 +36,6 @@ C:\Users\030\Source\Repos\Enhanced-TestApp\EnhancedTestApp\obj\Debug\netcoreapp3
 C:\Users\030\Source\Repos\Enhanced-TestApp\EnhancedTestApp\obj\Debug\netcoreapp3.1\Views\Windows\MainWindow.g.cs
 C:\Users\030\Source\Repos\Enhanced-TestApp\EnhancedTestApp\obj\Debug\netcoreapp3.1\Views\Windows\MainWindow.baml
 C:\Users\030\Source\Repos\Enhanced-TestApp\EnhancedTestApp\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
-C:\Users\030\Source\Repos\Enhanced-TestApp\EnhancedTestApp\obj\Debug\netcoreapp3.1\EnhancedTestApp.csprojAssemblyReference.cache
 C:\Users\030\Source\Repos\Enhanced-TestApp\EnhancedTestApp\bin\Debug\netcoreapp3.1\FontAwesome5.Net.dll
 C:\Users\030\Source\Repos\Enhanced-TestApp\EnhancedTestApp\bin\Debug\netcoreapp3.1\FontAwesome5.dll
 C:\Users\030\Source\Repos\Enhanced-TestApp\EnhancedTestApp\obj\Debug\netcoreapp3.1\EnhancedTestApp.csproj.CopyComplete
