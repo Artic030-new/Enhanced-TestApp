@@ -25,6 +25,8 @@ namespace EnhancedTestApp.ViewModels
         {
             #region === Команды ===
             CloseAppCommand = new LambdaCommand(OnCloseAppCommandExecuted, CanCloseAppCommandExecute);
+            AddGroupCmd = new LambdaCommand(OnAddGroupCmdExecuted, CanAddGroupCmdExecute);
+            DeleteGroupCmd = new LambdaCommand(OnDeleteGroupCmdExecuted, CanDeleteGroupCmdExecute);
             #endregion === Команды ===
             int student_index = 1;
             Random rnd = new Random();
@@ -76,7 +78,32 @@ namespace EnhancedTestApp.ViewModels
         public ICommand CloseAppCommand { get; }
         private void OnCloseAppCommandExecuted(object o) => Application.Current.Shutdown();
         private bool CanCloseAppCommandExecute(object o) =>  true;
-        #endregion === Завершение работы ===
+        #endregion
+
+        #region Добавить новую группу
+        public ICommand AddGroupCmd { get; }
+        private void OnAddGroupCmdExecuted(object o) 
+        {
+            var groups_max_index = Groups.Count + 1;
+            var new_group = new Group
+            {
+                Name = $"Группа = {groups_max_index}",
+                Students = new ObservableCollection<Student>()
+            };
+            Groups.Add(new_group);
+        }
+        private bool CanAddGroupCmdExecute(object o) => true;
+        #endregion
+
+        #region Удалить группу
+        public ICommand DeleteGroupCmd { get; }
+        private void OnDeleteGroupCmdExecuted(object o)
+        {
+            if (!(o is Group group)) return;
+            Groups.Remove(group);
+        }
+        private bool CanDeleteGroupCmdExecute(object o) => o is Group g && Groups.Contains(g);
+        #endregion
 
         #endregion === Команды ===
     }

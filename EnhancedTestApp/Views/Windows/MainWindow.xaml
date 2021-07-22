@@ -88,16 +88,21 @@
                         <ColumnDefinition Width="250"/>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
-                    <ListBox ItemsSource="{Binding Path=Groups}" SelectedItem="{Binding SelectedCompositeValue}" SelectedIndex="0">
-                        <ListBox.ItemTemplate>
-                            <DataTemplate DataType="employee:Group">
-                                <StackPanel Orientation="Horizontal">
-                                    <TextBlock Text="{Binding Name}"/>
-                                    <TextBlock Text="{Binding Students.Count, StringFormat=[Студентов{0}]}" Margin="4 0 0 0"/>
-                                </StackPanel>
-                            </DataTemplate>
-                        </ListBox.ItemTemplate>
-                    </ListBox>
+                    <DockPanel>
+                        <UniformGrid DockPanel.Dock="Bottom" Rows="1">
+                            
+                        </UniformGrid>
+                        <ListBox ItemsSource="{Binding Path=Groups}" SelectedItem="{Binding SelectedCompositeValue}" SelectedIndex="0">
+                            <ListBox.ItemTemplate>
+                                <DataTemplate DataType="employee:Group">
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Text="{Binding Name}"/>
+                                        <TextBlock Text="{Binding Students.Count, StringFormat=[Студентов{0}]}" Margin="4 0 0 0"/>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                    </DockPanel>
                     <GroupBox Grid.Row="0" Grid.Column="1" Header="Выбранный элемент">
                         <GroupBox.Resources>
                             <DataTemplate DataType="{x:Type employee:Group}">
