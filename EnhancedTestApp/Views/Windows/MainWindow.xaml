@@ -99,6 +99,11 @@
                         </ListBox.ItemTemplate>
                     </ListBox>
                     <GroupBox Grid.Row="0" Grid.Column="1" Header="Выбранный элемент">
+                        <GroupBox.Resources>
+                            <DataTemplate DataType="{x:Type employee:Group}">
+                                <TextBlock Text="{Binding Name}"/>
+                            </DataTemplate>
+                        </GroupBox.Resources>
                         <ContentControl Content="{Binding Path=SelectedCompositeValue}"/>
                     </GroupBox>
                 </Grid>
