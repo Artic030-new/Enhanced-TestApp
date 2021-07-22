@@ -15,7 +15,12 @@ namespace EnhancedTestApp.ViewModels
     {
         public ObservableCollection<Group> Groups { get; }
         private Group _selectedGroup;
+        public object[] CompositeCollection { get; }
         public Group SelectedGroup { get => _selectedGroup; set => Set(ref _selectedGroup, value); }
+
+        private object _selectedCompositeValue;
+        public object SelectedCompositeValue { get => _selectedCompositeValue; set => Set(ref _selectedCompositeValue, value); }
+
         public MainWindowViewModel() 
         {
             #region === Команды ===
@@ -38,6 +43,11 @@ namespace EnhancedTestApp.ViewModels
                 Students = new ObservableCollection<Student>(students),
             });;
             Groups = new ObservableCollection<Group>(groups);
+            var data_list = new List<object>();
+            data_list.Add(34);
+            data_list.Add("fdfgfd");
+            data_list.Add(Groups[1].Students[0]);
+            CompositeCollection = data_list.ToArray();
             
         }
         #region Свойство заголовка

@@ -82,7 +82,27 @@
                     </Grid>
                 </Grid>
             </TabItem>
-            <TabItem Header="Вкладка 2"></TabItem>
+            <TabItem Header="Разное">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="250"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <ListBox ItemsSource="{Binding Path=CompositeCollection}" SelectedItem="{Binding SelectedCompositeValue}">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate DataType="employee:Group">
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="{Binding Name}"/>
+                                    <TextBlock Text="{Binding Students.Count, StringFormat=Студентов{0}}" Margin="4 0 0 0"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                    <GroupBox Grid.Row="0" Grid.Column="1" Header="Выбранный элемент">
+                        <ContentControl Content="{Binding Path=SelectedCompositeValue}"/>
+                    </GroupBox>
+                </Grid>
+            </TabItem>
         </TabControl>
     </DockPanel>
 </Window>
