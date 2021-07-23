@@ -90,15 +90,9 @@
                     </Grid.ColumnDefinitions>
                     <DockPanel>
                         <UniformGrid Margin="4" DockPanel.Dock="Bottom" Rows="1">
-                            <UniformGrid.Resources>
-                                <Style x:Key="ButtonStyle" TargetType="Button">
-                                    <Setter Property="Margin" Value="0 0 3 0"/>
-                                    <Setter Property="Padding" Value="2"/>
-                                    <Setter Property="Background" Value="Wheat"/>
-                                </Style>
-                            </UniformGrid.Resources>
-                            <Button Content="Добавить" Command="{Binding Path=AddGroupCmd}" Style="{StaticResource ButtonStyle}"/>
-                            <Button Content="Удалить" Command="{Binding Path=DeleteGroupCmd}" Style="{StaticResource ButtonStyle}" CommandParameter="{Binding SelectedGroup}"/>
+                            
+                            <Button Content="Добавить" Command="{Binding Path=AddGroupCmd}"/>
+                            <Button Content="Удалить" Command="{Binding Path=DeleteGroupCmd}" CommandParameter="{Binding SelectedGroup}"/>
                         </UniformGrid>
                         <ListBox ItemsSource="{Binding Path=Groups}" SelectedItem="{Binding SelectedCompositeValue}" SelectedIndex="0">
                             <ListBox.ItemTemplate>

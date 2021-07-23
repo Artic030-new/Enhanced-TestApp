@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
 C:\Users\030\Source\Repos\Enhanced-TestApp\EnhancedTestApp\App.xaml
-11895717287
+2-1222450413
 
 8-631064719
 194-1580901416
-Views\Windows\MainWindow.xaml;
+Resources\Styles\Buttons.xaml;Views\Windows\MainWindow.xaml;
 
 False
 
