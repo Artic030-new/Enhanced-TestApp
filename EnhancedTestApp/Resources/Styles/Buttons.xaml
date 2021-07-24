@@ -2,6 +2,10 @@
     <Style TargetType="Button">
         <Setter Property="Margin" Value="0 0 3 0"/>
         <Setter Property="Padding" Value="2"/>
-        <Setter Property="Background" Value="Wheat"/>
+        <Setter Property="Background" Value="LightGray"/>
     </Style>
+    
+    
+    
+    
 </ResourceDictionary>

@@ -41,3 +41,4 @@ C:\Users\030\Source\Repos\Enhanced-TestApp\EnhancedTestApp\bin\Debug\netcoreapp3
 C:\Users\030\Source\Repos\Enhanced-TestApp\EnhancedTestApp\obj\Debug\netcoreapp3.1\EnhancedTestApp.csproj.CopyComplete
 C:\Users\030\Source\Repos\Enhanced-TestApp\EnhancedTestApp\obj\Debug\netcoreapp3.1\Resources\Styles\Buttons.baml
 C:\Users\030\Source\Repos\Enhanced-TestApp\EnhancedTestApp\obj\Debug\netcoreapp3.1\App.baml
+C:\Users\030\Source\Repos\Enhanced-TestApp\EnhancedTestApp\obj\Debug\netcoreapp3.1\EnhancedTestApp.csprojAssemblyReference.cache

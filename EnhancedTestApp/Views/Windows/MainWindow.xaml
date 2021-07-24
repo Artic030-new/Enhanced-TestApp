@@ -9,6 +9,9 @@
         xmlns:local="clr-namespace:EnhancedTestApp"
         mc:Ignorable="d"
         Title="{Binding Path=Title}" Height="450" Width="800">
+    <Window.Resources>
+        
+    </Window.Resources>
     <Window.DataContext>
         <vm:MainWindowViewModel/>
     </Window.DataContext>
@@ -50,7 +53,7 @@
                             <MouseBinding Command="{Binding Path=CloseAppCommand}" MouseAction="LeftDoubleClick"/>
                         </Border.InputBindings>
                     </Border>
-                    <Button Grid.Column="0" Grid.Row="1" Margin="0 10" Width="200" Height="35" VerticalAlignment="Top" Command="{Binding Path=CloseAppCommand}"/>
+                    <Button  Grid.Column="0" Grid.Row="1" Margin="0 10" Width="200" Height="35" VerticalAlignment="Top" Command="{Binding Path=CloseAppCommand}"/>
                     <Grid Grid.Column="1" Grid.Row="1">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="250"/>
@@ -90,9 +93,20 @@
                     </Grid.ColumnDefinitions>
                     <DockPanel>
                         <UniformGrid Margin="4" DockPanel.Dock="Bottom" Rows="1">
-                            
-                            <Button Content="Добавить" Command="{Binding Path=AddGroupCmd}"/>
-                            <Button Content="Удалить" Command="{Binding Path=DeleteGroupCmd}" CommandParameter="{Binding SelectedGroup}"/>
+
+                            <Button Command="{Binding Path=AddGroupCmd}">
+                                <StackPanel Orientation="Horizontal">
+                                    <fa:ImageAwesome Height="12" Icon="Solid_CheckCircle"/>
+                                    <TextBox Text="Добавить" Background="Transparent"/>
+                                </StackPanel>
+                            </Button>
+                            <Button Command="{Binding Path=DeleteGroupCmd}" CommandParameter="{Binding SelectedGroup}">
+                                
+                                <StackPanel Orientation="Horizontal">
+                                    <fa:ImageAwesome Height="12" Icon="Brands_Apple"/>
+                                    <TextBox Text="Удалить" Background="Transparent"/>
+                                </StackPanel>
+                            </Button>
                         </UniformGrid>
                         <ListBox ItemsSource="{Binding Path=Groups}" SelectedItem="{Binding SelectedCompositeValue}" SelectedIndex="0">
                             <ListBox.ItemTemplate>
@@ -111,7 +125,7 @@
                                 <TextBlock Text="{Binding Name}"/>
                             </DataTemplate>
                         </GroupBox.Resources>
-                        <ContentControl Content="{Binding Path=SelectedCompositeValue}"/>
+                        <ContentControl/>
                     </GroupBox>
                 </Grid>
             </TabItem>
