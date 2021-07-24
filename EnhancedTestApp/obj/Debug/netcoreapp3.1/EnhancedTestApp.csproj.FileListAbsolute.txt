@@ -29,7 +29,6 @@ C:\Users\030\Source\Repos\Enhanced-TestApp\EnhancedTestApp\obj\Debug\netcoreapp3
 C:\Users\030\Source\Repos\Enhanced-TestApp\EnhancedTestApp\obj\Debug\netcoreapp3.1\EnhancedTestApp.g.resources
 C:\Users\030\Source\Repos\Enhanced-TestApp\EnhancedTestApp\obj\Debug\netcoreapp3.1\EnhancedTestApp.AssemblyInfoInputs.cache
 C:\Users\030\Source\Repos\Enhanced-TestApp\EnhancedTestApp\obj\Debug\netcoreapp3.1\EnhancedTestApp.AssemblyInfo.cs
-C:\Users\030\Source\Repos\Enhanced-TestApp\EnhancedTestApp\obj\Debug\netcoreapp3.1\EnhancedTestApp.csproj.CoreCompileInputs.cache
 C:\Users\030\Source\Repos\Enhanced-TestApp\EnhancedTestApp\obj\Debug\netcoreapp3.1\EnhancedTestApp.dll
 C:\Users\030\Source\Repos\Enhanced-TestApp\EnhancedTestApp\obj\Debug\netcoreapp3.1\EnhancedTestApp.pdb
 C:\Users\030\Source\Repos\Enhanced-TestApp\EnhancedTestApp\obj\Debug\netcoreapp3.1\EnhancedTestApp.genruntimeconfig.cache
@@ -62,3 +61,4 @@ C:\Users\030\Source\Repos\Enhanced-TestApp\EnhancedTestApp\bin\Debug\netcoreapp3
 C:\Users\030\Source\Repos\Enhanced-TestApp\EnhancedTestApp\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
 C:\Users\030\Source\Repos\Enhanced-TestApp\EnhancedTestApp\obj\Debug\netcoreapp3.1\Views\Windows\DbData.g.cs
 C:\Users\030\Source\Repos\Enhanced-TestApp\EnhancedTestApp\obj\Debug\netcoreapp3.1\Views\Windows\DbData.baml
+C:\Users\030\Source\Repos\Enhanced-TestApp\EnhancedTestApp\obj\Debug\netcoreapp3.1\EnhancedTestApp.csproj.CoreCompileInputs.cache

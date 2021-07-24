@@ -54,7 +54,7 @@ namespace EnhancedTestApp.Views.Windows {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/EnhancedTestApp;component/views/windows/dbdata.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/EnhancedTestApp;V1.0.0.0;component/views/windows/dbdata.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Views\Windows\DbData.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -11,6 +11,7 @@
           "FontAwesome5": "2.1.4",
           "Microsoft.EntityFrameworkCore.Design": "5.0.8",
           "Microsoft.EntityFrameworkCore.Tools": "5.0.8",
+          "Microsoft.Extensions.DependencyInjection": "5.0.2",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "5.0.7"
         },
         "runtime": {
